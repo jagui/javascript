@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "transpiling"
+		},
+		{
+			"path": "bundling/babelify-sample"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "babelify-sample"
+	}
+}
