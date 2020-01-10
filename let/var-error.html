@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="wrong">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <p>Always displays 5:5 because by the time we click on the items `li` is the 5th element and `i` is 5.</p>
+</div>
+<div class="right">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <p>Works properly because we're using `let` instead of `var`.</p>
+</div>
+</body>
+<script type="application/javascript">
+    var items = document.querySelectorAll('.wrong li');
+    for (var i = 0; i < 5; i++) {
+        var li = items[i];
+        li.addEventListener('click', function () {
+            alert(li.textContent + ':' + i);
+        })
+    }
+
+    var items = document.querySelectorAll('.right li');
+    for (let i = 0; i < 5; i++) {
+        let li = items[i];
+        li.addEventListener('click', function () {
+            alert(li.textContent + ':' + i);
+        })
+    }
+
+</script>
+</html>
