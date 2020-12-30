@@ -1,4 +1,4 @@
-#What I've learnt so far
+# What I've learnt so far
 
 ##  Lesson 2: Transpiling
 - Refresher on npm usage: local vs global.
